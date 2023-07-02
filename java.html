@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Página Principal</title>
+    <link
+      rel="stylesheet"
+      href="assets/css/style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="assets/images/logo.png"
+          width="120"
+          alt="imagem mapa mundi em formato circular"
+        />
+      </div>
+    </header>
+
+    <div class="bar"></div>
+
+    <main class="content">
+      <nav class="sidebar">
+        <h2>Título</h2>
+        <ul>
+          <li><a href="/index.html">Linguagens de Programação</a></li>
+          <li><a href="/javascript.html">JavaScript</a></li>
+          <li><a href="/python.html">Python</a></li>
+          <li><a href="/java.html">Java</a></li>
+        </ul>
+      </nav>
+
+      <section class="main">
+        <h1 id="java">Java</h1>
+        <p>
+          Java é uma linguagem de programação orientada a objetos desenvolvida
+          na década de 90 por uma equipe de programadores chefiada por James
+          Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela
+          empresa Oracle Corporation. Diferente das linguagens de programação
+          modernas, que são compiladas para código nativo, Java é compilada para
+          um bytecode que é interpretado por uma máquina virtual (Java Virtual
+          Machine, abreviada JVM). A linguagem de programação Java é a linguagem
+          convencional da Plataforma Java, mas não é a sua única linguagem. A
+          J2ME é utilizada em jogos de computador, celular, calculadoras, ou até
+          mesmo o rádio do carro.
+        </p>
+
+        <h2 id="historia">História</h2>
+        <p>
+          Em 1991, na Sun Microsystems, foi iniciado o Green Project, o berço do
+          Java, uma linguagem de programação orientada a objetos. Os mentores do
+          projeto eram Patrick Naughton, Mike Sheridan, e James Gosling. Eles
+          acreditavam que, eventualmente, haveria uma convergência dos
+          computadores com os equipamentos e eletrodomésticos frequentemente
+          usados pelas pessoas no seu dia-a-dia.
+        </p>
+
+        <p>
+          Para provar a viabilidade desta ideia, treze pessoas trabalharam
+          durante dezoito meses. No verão de 1992 eles emergiram de um
+          escritório de Sand Hill Road (no Menlo Park), com uma demonstração
+          funcional da ideia inicial. O protótipo se chamava *7 (lê-se “Star
+          Seven”), um controle remoto com uma interface gráfica touchscreen,
+          acompanhado de um mascote, hoje amplamente conhecido no mundo Java, o
+          Duke, que tinha a função de ser um guia virtual ajudando usuários a
+          utilizar o equipamento. O star-seven tinha a habilidade de controlar
+          diversos dispositivos e aplicações. James Gosling especificou uma nova
+          linguagem de programação para o *7. chamada de “Oak”, que quer dizer
+          carvalho, uma árvore que ele podia observar quando olhava através da
+          sua janela.
+        </p>
+
+        <h2 id="comercial">Marca comercial</h2>
+
+        <figure>
+          <img
+            src="assets/images/logo-java.png"
+            alt="Imagem de logo Java"
+          />
+        </figure>
+
+        <h2 id="padronizacao">Padronização</h2>
+        <p>
+          Em 1997 a Sun Microsystems tentou submeter a linguagem a padronização
+          pelos órgãos ISO/IEC e ECMA, mas acabou desistindo. Java ainda é um
+          padrão de fato, que é controlada através da JCP (Java Community
+          Process). Em novembro de 2006, a Sun liberou a maior parte do Java
+          como um software livre sob os termos da GNU GPL (General Public
+          License), finalizando o processo em maio de 2007, tornando
+          praticamente todo o código Java como software de código aberto, menos
+          uma pequena porção da qual a Sun não possui os direitos legais.
+        </p>
+
+        <h2 id="aquisicao">Aquisição pela Oracle</h2>
+        <p>
+          Em 2008 a Oracle Corporation adquire a empresa responsável pela
+          linguagem Java, a Sun Microsystems, por US$ 7,4 bilhões, com o
+          objetivo de levar o Java e outros produtos da Sun ao dispor dos
+          consumidores.
+        </p>
+
+        <h2 id="versoes">Versões</h2>
+        <table
+          summary="Tabela com as versões da linguagem de programação Java, com as versões e data"
+          width="400"
+          cellspacing="0"
+        >
+          <thead>
+            <tr>
+              <th>Versão</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JDK1.0</td>
+              <td>23 de janeiro de 1996</td>
+            </tr>
+            <tr>
+              <td>JDK1.1</td>
+              <td>19 de fevereiro de 1997</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>J2SE 1.2</td>
+              <td>8 de dezembro de 1998</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Java SE 11 (LTS)</td>
+              <td>25 de setembro de 2018</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Java SE 20</td>
+              <td>21 de março de 2023</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 id="exemplo">Exemplo de código</h2>
+        <div>
+          <pre class="code">
+            <code>             
+                public class OláMundo {
+                  /**
+               * Método que executa o programa
+               * public = É visto em qualquer lugar da aplicação. <br> É o modificador de acesso
+               * static = é iniciado automaticamente pela JVM, sem precisar <br> de uma instância
+               * void = Método sem retorno (retorno vazio)
+               * main = Nome do método, que é obrigatório ser este para que seja <br> executado como o método principal da aplicação. A aplicação só pode ter um método <br> denominado main. Recebe como parâmetro um array de String.
+               * String[] args = Array de argumentos que podem ser repassados <br> na chamada do programa.
+               * /
+                  public static void main(String[] args) {
+                     System.out.println("Olá, Mundo!"); //Imprime na tela a frase
+                  }
+               }             
+            </code>
+          </pre>
+        </div>
+      </section>
+
+      <nav class="anchors">
+        <h2>Neste Artigo</h2>
+        <ul>
+          <li><a href="#java">Java</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#comercial">Marca comercial</a></li>
+          <li><a href="#padronizacao">Padronização</a></li>
+          <li><a href="#aquisicao">Aquisição</a></li>
+          <li><a href="#versoes">Versões</a></li>
+          <li><a href="#exemplo">Exemplo</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <footer class="footer">
+      <p>Desenvolvido por Marcelo Claro Lopes - Web Developer</p>
+    </footer>
+  </body>
+</html>
